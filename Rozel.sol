@@ -8,8 +8,8 @@ import "./Math.sol";
 contract SISA is StandardToken, Math {
 
 
-	string constant public name = "SISA Token";
-	string constant public symbol = "SISA";
+	string constant public name = "ROZEL Token";
+	string constant public symbol = "ROZEL";
 	uint constant public decimals = 18;
 
 	address public ico_tokens = 0x1111111111111111111111111111111111111111;
@@ -133,16 +133,16 @@ contract SISA is StandardToken, Math {
 
         return true;
     }
-	function SISA(address _founder, address _admin, address _bounty, address _team) {
+	function ROZEL(address _founder, address _admin, address _bounty, address _team) {
 		founder = _founder;
 		admin = _admin;
 		bounty_funds = _bounty;
 		team_funds = _team;
-		totalSupply = 50000000 * 1 ether;
-		balances[preICO_tokens] = 5000000 * 1 ether;
-		balances[bounty_funds] = 3000000 * 1 ether;
-		balances[team_funds] = 7000000 * 1 ether;
-		balances[ico_tokens] = 32500000 * 1 ether;
+		totalSupply = 98100000 * 1 ether;
+		balances[preICO_tokens] = 5297400 * 1 ether;
+		balances[bounty_funds] = 4532220 * 1 ether;
+		balances[team_funds] = 3619890 * 1 ether;
+		balances[ico_tokens] = 1280205 * 1 ether;
 
 
 
