@@ -1,12 +1,12 @@
 pragma solidity ^0.4.11;
 
-import "./SISA.sol";
+import "./ROZEL.sol";
 import "./Math.sol";
 
 
 contract preICO is Math {
 
-	SISA public SISA_token; 
+	ROZEL public ROZEL_token; 
 	address public founder; 
 	address public sale_address = 0x2222222222222222222222222222222222222222;
 
@@ -29,7 +29,7 @@ contract preICO is Math {
 	}
 	function preICO(address tokenAddress, address founderAddress) {
 		founder = founderAddress;
-		SISA_token = SISA(tokenAddress);
+		ROZEL_token = ROZEL(tokenAddress);
 
 	}
 
@@ -39,7 +39,7 @@ contract preICO is Math {
 		uint amount = msg.value;
 		uint tokens = div(amount * 100 ether, price);
 		if (founder.send(amount)) {
-			SISA_token.transferFrom(sale_address, msg.sender, tokens);
+			ROZEL_token.transferFrom(sale_address, msg.sender, tokens);
 		} else {
 			throw;
 		}
