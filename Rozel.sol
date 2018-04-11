@@ -9,7 +9,7 @@ contract SISA is StandardToken, Math {
 
 
 	string constant public name = "ROZEL Token";
-	string constant public symbol = "ROZEL";
+	string constant public symbol = "RZL";
 	uint constant public decimals = 18;
 
 	address public ico_tokens = 0x1111111111111111111111111111111111111111;
